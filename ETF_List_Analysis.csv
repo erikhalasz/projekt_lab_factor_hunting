@@ -1,0 +1,40 @@
+Ticker,Name,Category,Focus/Description
+SPY,SPDR S&P 500 ETF Trust,Broad Market,The 500 largest U.S. companies.
+GLD,SPDR Gold Shares,Commodities,Physical Gold bullion.
+SMH,VanEck Semiconductor ETF,Technology,Top global semiconductor companies.
+SOXX,iShares Semiconductor ETF,Technology,Broad U.S. semiconductor industry.
+XAG,Silver (Spot),Commodities,Physical Silver price tracking.
+XLP,Consumer Staples Select Sector SPDR,Sectors,"Essential goods (Food, Beverage, Household)."
+XLV,Health Care Select Sector SPDR,Sectors,Pharmaceuticals and healthcare services.
+KRE,SPDR S&P Regional Banking ETF,Financials,Regional and local U.S. banks.
+XLF,Financial Select Sector SPDR,Financials,Large-cap financial institutions and banks.
+TLT,iShares 20+ Year Treasury Bond ETF,Fixed Income,Long-term U.S. government debt.
+DBA,Invesco Agriculture Fund,Commodities,"Agricultural commodities (Corn, Wheat, etc.)."
+USO,United States Oil Fund,Energy,WTI Crude Oil price tracking.
+IWN,iShares Russell 2000 Value ETF,Broad Market,Small-cap U.S. value stocks.
+CHAT,Roundhill Generative AI & Tech ETF,AI & Tech,Generative AI software and hardware.
+THNQ,ROBO Global AI ETF,AI & Tech,Artificial intelligence and computing.
+WTAI,WisdomTree Artificial Intelligence ETF,AI & Tech,Global AI value chain.
+SOXQ,Invesco PHLX Semiconductor ETF,Technology,Lower-cost semiconductor index fund.
+IDGT,iShares Digital Entertainment ETF,Technology,"Gaming, streaming, and digital media."
+AIQ,Global X Artificial Intelligence ETF,AI & Tech,AI and Big Data analytics.
+SRVR,Pacer Data & Infrastructure ETF,Real Estate,Data center and cell tower REITs.
+XLU,Utilities Select Sector SPDR,Sectors,"Regulated utilities (Gas, Water, Electric)."
+UTES,Virtus Reaves Utilities ETF,Sectors,Active management in the utility sector.
+GRID,First Trust Clean Edge Smart Grid ETF,Infrastructure,Smart grid and electric infrastructure.
+COPX,Global X Copper Miners ETF,Commodities/Mining,Global copper mining companies.
+COPP,Sprott Copper Miners ETF,Commodities/Mining,Specialized copper mining stocks.
+COPA,Themes Copper Miners ETF,Commodities/Mining,Copper exploration and production.
+URA,Global X Uranium ETF,Energy/Mining,Uranium mining and nuclear power.
+URNM,Sprott Uranium Miners ETF,Energy/Mining,Pure-play uranium mining industry.
+NUUR,Nuveen ESG Uranium ETF,Energy/Mining,Nuclear energy with ESG considerations.
+LIT,Global X Lithium & Battery Tech ETF,Energy/Mining,Lithium miners and EV battery producers.
+PAVE,Global X US Infrastructure ETF,Infrastructure,Construction and industrial infrastructure.
+IGV,iShares Expanded Tech-Software ETF,Technology,Software-as-a-Service (SaaS) and applications.
+SKYY,First Trust Cloud Computing ETF,Technology,Cloud computing services and infrastructure.
+QTUM,Defiance Quantum Computing ETF,Technology,Quantum computing and machine learning.
+IVES,Wedbush ETFMG Global Cloud Tech ETF,Technology,Global enterprise cloud software.
+IGPT,Invesco AI and Next Gen Software ETF,AI & Tech,Next-gen software and AI platforms.
+CIBR,First Trust NASDAQ Cybersecurity ETF,Cybersecurity,Large-cap cybersecurity companies.
+HACK,Prime Cyber Security ETF,Cybersecurity,Global cybersecurity industry exposure.
+BUG,Global X Cybersecurity ETF,Cybersecurity,Cybersecurity software pure-plays.
