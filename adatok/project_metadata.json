@@ -1,0 +1,86 @@
+{
+  "project_name": "Factor Hunting for AI Equities",
+  "industry_blocks": [
+    {
+      "name": "AI_Compute_and_Core_Semiconductors",
+      "example_tickers": ["NVDA", "AMD", "AVGO", "ARM", "INTC", "QCOM", "MRVL", "MU", "MPWR", "ALAB", "CRDO"],
+      "etf_proxies": ["SMH", "SOXX", "CHAT", "THNQ", "WTAI", "SOXQ"]
+    },
+    {
+      "name": "Semiconductor_Equipment_and_Lithography",
+      "example_tickers": ["ASML", "AMAT", "LRCX", "KLAC", "TER", "CAMT", "RMBS"],
+      "etf_proxies": ["SMH", "SOXX", "SOXQ"]
+    },
+    {
+      "name": "Foundries_Packaging_and_Memory",
+      "example_tickers": ["TSM", "GFS", "UMC", "ASX", "MU", "AMKR"],
+      "etf_proxies": ["SMH", "SOXX"]
+    },
+    {
+      "name": "Networking_and_Optical_Interconnect",
+      "example_tickers": ["ANET", "CSCO", "MRVL", "AVGO", "CIEN", "COHR", "LITE", "FN", "GLW"],
+      "etf_proxies": ["IDGT"]
+    },
+    {
+      "name": "Servers_and_System_Integrators",
+      "example_tickers": ["SMCI", "DELL", "HPE", "IBM", "CLS"]
+    },
+    {
+      "name": "Hyperscalers_and_AI_Platforms",
+      "example_tickers": ["MSFT", "AMZN", "GOOGL", "META", "ORCL"],
+      "etf_proxies": ["AIQ"]
+    },
+    {
+      "name": "Data_Center_Owners_and_Digital_Infrastructure",
+      "example_tickers": ["EQIX", "DLR", "IRM", "AMT", "GDS", "BIP", "CCI"],
+      "etf_proxies": ["SRVR", "IDGT"]
+    },
+    {
+      "name": "Power_Cooling_and_Electrical_Equipment",
+      "example_tickers": ["VRT", "ETN", "ABB", "GEV", "JCI", "CARR", "TT", "GNRC", "MOD", "FIX", "EME"],
+      "etf_proxies": ["GRID"]
+    },
+    {
+      "name": "Utilities_and_Power_Producers",
+      "example_tickers": ["NEE", "DUK", "SO", "EXC", "AEP", "CEG", "VST", "PEG", "AWK"],
+      "etf_proxies": ["XLU", "UTES"]
+    },
+    {
+      "name": "Grid_Capex_Transmission_and_Transformers",
+      "example_tickers": ["PWR", "ETN", "ABB", "PRYMY", "NEXNY"],
+      "etf_proxies": ["GRID"]
+    },
+    {
+      "name": "Critical_Materials_and_Mining",
+      "sub_blocks": [
+        {"example_tickers": ["FCX", "SCCO", "TECK", "BHP", "RIO", "HBM"], "etf_proxies": ["COPX", "COPP", "COPA"]},
+        {"example_tickers": ["CCJ", "UEC", "NXE"], "etf_proxies": ["URA", "URNM", "NUUR"]},
+        {"example_tickers": ["ALB", "SQM"], "etf_proxies": ["LIT"]}
+      ]
+    },
+    {
+      "name": "Construction_and_Infrastructure_Buildout",
+      "example_tickers": ["FLR", "ACM", "J", "MTZ", "PWR", "STRL"],
+      "etf_proxies": ["PAVE"]
+    },
+    {
+      "name": "Data_Management_Storage_and_Pipelines",
+      "example_tickers": ["SNOW", "MDB", "PSTG", "NTAP", "WDC", "STX", "ESTC"],
+      "etf_proxies": ["IGV"]
+    },
+    {
+      "name": "AI_Software_and_Enterprise_Applications",
+      "example_tickers": ["PLTR", "NOW", "CRM", "WDAY", "ADBE", "DDOG"],
+      "etf_proxies": ["IGV", "SKYY", "QTUM", "IVES", "IGPT"]
+    },
+    {
+      "name": "Cybersecurity_and_Model_Protection",
+      "example_tickers": ["CRWD", "PANW", "ZS", "CYBR", "FTNT", "NET"],
+      "etf_proxies": ["CIBR", "HACK", "BUG"]
+    },
+    {
+      "name": "Edge_AI_and_Consumer_Hardware",
+      "example_tickers": ["AAPL", "HPQ", "LNVGY", "QCOM", "INTC"]
+    }
+  ]
+}
