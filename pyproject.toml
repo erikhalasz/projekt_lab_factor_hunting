@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factor-lens"
+version = "0.1.0"
+description = "Research pipeline for an orthogonal factor lens on an AI equity basket"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pandas-market-calendars",
+    "pyarrow",
+    "scipy",
+    "yfinance",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
