@@ -1,0 +1,7 @@
+,gate,value,thresholds,status,n_obs
+0,SPY vs ^GSPC (non-ex-div days),0.99844,">=0.998 OK, >=0.995 WARN, >=0.98 FAIL",OK,2658
+1,SPY - ^GSPC mean spread (annualised),0.0157,0.5%..3% (dividend yield),OK,2658
+2,QQQ vs ^NDX (non-ex-div days),0.99873,">=0.998 OK, >=0.995 WARN, >=0.98 FAIL",OK,2658
+3,IWM vs ^RUT (non-ex-div days),0.99642,">=0.995 OK, >=0.99 WARN, >=0.97 FAIL",OK,2658
+4,SMH vs ^SOX (non-ex-div days),0.99068,">=0.985 OK, >=0.97 WARN, >=0.93 FAIL",OK,2691
+5,EW avg of S&P stocks vs RSP,0.99225,">=0.985 OK, >=0.97 WARN, >=0.90 FAIL",OK,2701

@@ -1,0 +1,2 @@
+date,ticker,action,note
+# actions: keep_return | nan_return   (delete this line)

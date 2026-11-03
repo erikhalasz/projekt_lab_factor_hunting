@@ -15,10 +15,10 @@ try:
 except NameError:                      # plain python (tests); notebooks provide display()
     display = print
 
+
 # ---- Where things live ---------------------------------------------------------
-DRIVE_BASE    = "/content/drive/MyDrive/factor_lens"
-RAW_VERSION   = "yahoo_2016-01-01_2026-10-01_v1"     # must match DATA_VERSION of notebook 01
-CLEAN_VERSION = "clean_v1"                           # change => a separate clean output folder
+RAW_VERSION   = "yahoo_2016-01-01_2026-10-01_v1"
+CLEAN_VERSION = "clean_v1"
 START, END_INCLUSIVE = "2016-01-01", "2026-10-01"
 
 FORCE_RECOMPUTE = False   # True => redo cleaning even if a matching output is on Drive
@@ -79,12 +79,53 @@ FIELDS = ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Dividends', 'S
 
 
 def mount_drive():
-    if "google.colab" in sys.modules:
-        from google.colab import drive
-        if not os.path.ismount("/content/drive"):
-            drive.mount("/content/drive")
-        return Path(DRIVE_BASE)
-    return Path(os.environ.get("FACTOR_LENS_LOCAL", "./factor_lens_local"))
+    """
+    Locate the factor_lens_local directory inside the GitHub repository.
+
+    The function works when the notebook or Python module is run
+    from the repository root or one of its subdirectories.
+
+    An optional FACTOR_LENS_LOCAL environment variable can override
+    the default location.
+    """
+
+    # Optional explicit location
+    env_path = os.environ.get("FACTOR_LENS_LOCAL")
+
+    if env_path:
+        base = Path(env_path).expanduser().resolve()
+        if (base / RAW_VERSION).is_dir():
+            return base
+        raise FileNotFoundError(
+            f"FACTOR_LENS_LOCAL is set to {base}, "
+            f"but {base / RAW_VERSION} does not exist."
+        )
+
+    # Search from the current working directory and this module's location
+    search_locations = [Path.cwd()]
+
+    if "__file__" in globals():
+        search_locations.append(Path(__file__).resolve().parent)
+
+    checked = set()
+
+    for location in search_locations:
+        for parent in [location, *location.parents]:
+            if parent in checked:
+                continue
+            checked.add(parent)
+
+            candidate = parent / "factor_lens_local"
+
+            if (candidate / RAW_VERSION).is_dir():
+                return candidate
+
+    raise FileNotFoundError(
+        "Could not find the downloaded data in the GitHub repository.\n"
+        f"Expected folder: factor_lens_local/{RAW_VERSION}\n"
+        "Make sure you are running the notebook from inside the "
+        "projekt_lab_factor_hunting repository."
+    )
 
 
 def panel_file(raw_root, field):

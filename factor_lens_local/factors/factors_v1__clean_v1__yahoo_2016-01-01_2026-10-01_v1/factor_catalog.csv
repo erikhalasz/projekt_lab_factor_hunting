@@ -1,0 +1,39 @@
+name,bucket,kind,unit,priority,story,leg_a,leg_b,column,definition,ai_tier
+MKT,Market,excess,ret,1,Equity market excess return,SPY,,,SPY excess return,distant
+D10Y,Rates,macro,bp,1,Change in the 10y Treasury yield: discount-rate effect on long-duration growth,,,TNX_chg_bp,TNX_chg_bp,distant
+CURVE,Rates,macro_diff,bp,2,Change in the 10y-5y slope (bp): a curve factor that is not just the 10-year yield,,,TNX_chg_bp|FVX_chg_bp,TNX_chg_bp - FVX_chg_bp,distant
+SLOPE,Rates,macro,bp,1,Change in the 10y-3m slope: growth / policy expectations,,,SLOPE_10Y_3M_chg_bp,SLOPE_10Y_3M_chg_bp,distant
+REALRATE,Rates,spread,ret,2,TIP - IEF: real-rate / breakeven proxy,TIP,IEF,,TIP - IEF,distant
+CREDIT,Credit/risk,spread,ret,2,High yield vs investment grade: credit spread with less Treasury-duration content than HY,HYG,LQD,,HYG - LQD,distant
+HY,Credit/risk,spread,ret,1,High yield vs Treasuries: credit spread / risk appetite,HYG,IEF,,HYG - IEF,distant
+VIX,Credit/risk,macro,dlog,1,Log change in the VIX: volatility / risk aversion,,,VIX_dlog,VIX_dlog,distant
+USD,Dollar/global,single,ret,1,US dollar,UUP,,,UUP,distant
+EM,Dollar/global,spread,ret,2,Emerging vs US equities,EEM,SPY,,EEM - SPY,distant
+DEV,Dollar/global,spread,ret,2,Developed ex-US vs US equities,EFA,SPY,,EFA - SPY,distant
+OIL,Energy,single,ret,1,Crude oil (power / energy input cost),USO,,,USO,distant
+GAS,Energy,single,ret,1,Natural gas (marginal power fuel),UNG,,,UNG,distant
+ENERGY,Energy,spread,ret,2,Energy sector vs market,XLE,SPY,,XLE - SPY,distant
+COPPER,Metals/nuclear,spread,ret,1,Copper miners vs market: grid / electrification build-out,COPX,SPY,,COPX - SPY,adjacent
+COPPER_FUT,Metals/nuclear,macro,ret,2,Copper futures (reference only: roll noise),,,HG_F_ret,HG_F_ret,adjacent
+URANIUM,Metals/nuclear,spread,ret,1,Uranium / nuclear vs market: nuclear power demand,URA,SPY,,URA - SPY,adjacent
+URANIUM_MINERS,Metals/nuclear,spread,ret,2,Uranium miners vs market (short history),URNM,SPY,,URNM - SPY,adjacent
+GOLD,Metals/nuclear,single,ret,2,Gold: real rates / safe haven,GLD,,,GLD,distant
+SEMI,Semiconductors,spread,ret,1,Semiconductors vs market: the compute cycle,SMH,SPY,,SMH - SPY,close
+SEMI_SOXX,Semiconductors,spread,ret,2,Alternate semiconductor spread (duplicate check),SOXX,SPY,,SOXX - SPY,close
+SEMI_SOXQ,Semiconductors,spread,ret,2,Alternate semiconductor spread (short history),SOXQ,SPY,,SOXQ - SPY,close
+SOFT,Software/cloud,spread,ret,1,Software vs market: AI monetisation,IGV,SPY,,IGV - SPY,close
+CLOUD,Software/cloud,spread,ret,2,Cloud vs market,SKYY,SPY,,SKYY - SPY,close
+INFRA,Software/cloud,spread,ret,2,Data-center / server infrastructure vs market,SRVR,SPY,,SRVR - SPY,close
+UTIL,Power/utilities,spread,ret,1,Regulated utilities vs market,XLU,SPY,,XLU - SPY,adjacent
+POWER,Power/utilities,spread,ret,1,Power-heavy utilities vs regulated utilities: merchant power / data-center demand,UTES,XLU,,UTES - XLU,adjacent
+GRID,Grid/capex,spread,ret,1,Grid / electrification infrastructure vs market,GRID,SPY,,GRID - SPY,adjacent
+CAPEX,Grid/capex,spread,ret,2,Infrastructure capex vs market,PAVE,SPY,,PAVE - SPY,adjacent
+SIZE,Style,spread,ret,1,Small vs large caps,IWM,SPY,,IWM - SPY,distant
+EQW,Style,spread,ret,2,Equal-weight vs cap-weight (mega-cap concentration),RSP,SPY,,RSP - SPY,distant
+LOWVOL,Style,spread,ret,1,Low-volatility vs market,USMV,SPY,,USMV - SPY,distant
+MOM,Style,spread,ret,1,Momentum vs market,MTUM,SPY,,MTUM - SPY,distant
+QUAL,Style,spread,ret,2,Quality vs market,QUAL,SPY,,QUAL - SPY,distant
+VALUE,Style,spread,ret,2,Value vs market,VLUE,SPY,,VLUE - SPY,distant
+CYBER,Cyber/robotics,spread,ret,2,Cyber-security vs market,CIBR,SPY,,CIBR - SPY,close
+CYBER_HACK,Cyber/robotics,spread,ret,2,Alternate cyber-security spread (duplicate check),HACK,SPY,,HACK - SPY,close
+ROBO,Cyber/robotics,spread,ret,2,Robotics / AI hardware vs market,BOTZ,SPY,,BOTZ - SPY,close

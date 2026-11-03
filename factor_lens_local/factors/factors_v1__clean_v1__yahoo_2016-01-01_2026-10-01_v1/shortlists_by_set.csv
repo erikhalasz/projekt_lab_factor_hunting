@@ -1,0 +1,86 @@
+model_set,rank,factor,bucket,priority,relevance_score,decision,reason,vif_if_added
+A_strict_expost,1,HY,Credit/risk,1,6.073117448435472,accepted,,
+A_strict_expost,2,OIL,Energy,1,4.6713751770070475,accepted,,1.0177165920045266
+A_strict_expost,3,USD,Dollar/global,1,3.8064952851129905,accepted,,1.0228642769137002
+A_strict_expost,4,D10Y,Rates,1,3.6919260790881387,accepted,,1.8518583816449465
+A_strict_expost,5,VIX,Credit/risk,1,3.4222304401281556,accepted,,1.0236131436763065
+A_strict_expost,6,SLOPE,Rates,1,2.852538078155244,rejected,|rho|=0.82 with D10Y,
+A_strict_expost,7,GAS,Energy,1,2.5000383717269536,accepted,,1.0091169307231438
+A_strict_expost,8,ENERGY,Energy,2,14.931100733087447,rejected,same bucket as OIL (|rho|=0.56),
+A_strict_expost,9,DEV,Dollar/global,2,5.6428233501804765,accepted,,1.3889988049096516
+A_strict_expost,10,REALRATE,Rates,2,4.482881756341197,not_reached,K_max=8 reached,
+A_strict_expost,11,CREDIT,Credit/risk,2,4.154219582853561,not_reached,K_max=8 reached,
+A_strict_expost,12,GOLD,Metals/nuclear,2,4.007614025252207,not_reached,K_max=8 reached,
+A_strict_expost,13,QUAL,Style,2,3.3874852450646453,not_reached,K_max=8 reached,
+A_strict_expost,14,CURVE,Rates,2,2.268767133203227,not_reached,K_max=8 reached,
+A_distant,1,HY,Credit/risk,1,6.073117448435472,accepted,,
+A_distant,2,MOM,Style,1,4.74017556230078,accepted,,1.0034672538460925
+A_distant,3,OIL,Energy,1,4.6713751770070475,accepted,,1.018241324481564
+A_distant,4,USD,Dollar/global,1,3.8064952851129905,accepted,,1.0233036775209774
+A_distant,5,D10Y,Rates,1,3.6919260790881387,accepted,,1.859894691977986
+A_distant,6,VIX,Credit/risk,1,3.4222304401281556,accepted,,1.0354129305703799
+A_distant,7,SLOPE,Rates,1,2.852538078155244,rejected,|rho|=0.82 with D10Y,
+A_distant,8,GAS,Energy,1,2.5000383717269536,accepted,,1.0093541447607595
+A_distant,9,ENERGY,Energy,2,14.931100733087447,not_reached,K_max=8 reached,
+A_distant,10,EM,Dollar/global,2,9.275687151527428,not_reached,K_max=8 reached,
+A_distant,11,DEV,Dollar/global,2,5.6428233501804765,not_reached,K_max=8 reached,
+A_distant,12,REALRATE,Rates,2,4.482881756341197,not_reached,K_max=8 reached,
+A_distant,13,CREDIT,Credit/risk,2,4.154219582853561,not_reached,K_max=8 reached,
+A_distant,14,GOLD,Metals/nuclear,2,4.007614025252207,not_reached,K_max=8 reached,
+A_distant,15,QUAL,Style,2,3.3874852450646453,not_reached,K_max=8 reached,
+A_distant,16,CURVE,Rates,2,2.268767133203227,not_reached,K_max=8 reached,
+B_plus_adjacent,1,UTIL,Power/utilities,1,11.79033813645793,accepted,,
+B_plus_adjacent,2,COPPER,Metals/nuclear,1,9.098751065834039,accepted,,1.0146280582429683
+B_plus_adjacent,3,GRID,Grid/capex,1,7.779342237729911,accepted,,1.1144402466103749
+B_plus_adjacent,4,HY,Credit/risk,1,6.073117448435472,accepted,,1.031111563857336
+B_plus_adjacent,5,MOM,Style,1,4.74017556230078,accepted,,1.011643446069254
+B_plus_adjacent,6,OIL,Energy,1,4.6713751770070475,accepted,,1.0883718623930372
+B_plus_adjacent,7,URANIUM,Metals/nuclear,1,4.10443227534792,accepted,,1.2164503968488072
+B_plus_adjacent,8,USD,Dollar/global,1,3.8064952851129905,not_reached,K_max=8 reached,
+B_plus_adjacent,9,D10Y,Rates,1,3.6919260790881387,not_reached,K_max=8 reached,
+B_plus_adjacent,10,VIX,Credit/risk,1,3.4222304401281556,not_reached,K_max=8 reached,
+B_plus_adjacent,11,POWER,Power/utilities,1,3.0056723552662366,not_reached,K_max=8 reached,
+B_plus_adjacent,12,SLOPE,Rates,1,2.852538078155244,not_reached,K_max=8 reached,
+B_plus_adjacent,13,GAS,Energy,1,2.5000383717269536,not_reached,K_max=8 reached,
+B_plus_adjacent,14,ENERGY,Energy,2,14.931100733087447,not_reached,K_max=8 reached,
+B_plus_adjacent,15,EM,Dollar/global,2,9.275687151527428,not_reached,K_max=8 reached,
+B_plus_adjacent,16,DEV,Dollar/global,2,5.6428233501804765,not_reached,K_max=8 reached,
+B_plus_adjacent,17,REALRATE,Rates,2,4.482881756341197,not_reached,K_max=8 reached,
+B_plus_adjacent,18,COPPER_FUT,Metals/nuclear,2,4.475545162935825,not_reached,K_max=8 reached,
+B_plus_adjacent,19,CREDIT,Credit/risk,2,4.154219582853561,not_reached,K_max=8 reached,
+B_plus_adjacent,20,GOLD,Metals/nuclear,2,4.007614025252207,not_reached,K_max=8 reached,
+B_plus_adjacent,21,QUAL,Style,2,3.3874852450646453,not_reached,K_max=8 reached,
+B_plus_adjacent,22,CURVE,Rates,2,2.268767133203227,not_reached,K_max=8 reached,
+C_all,1,LOWVOL,Style,1,16.42653062147269,accepted,,
+C_all,2,SEMI,Semiconductors,1,12.571121329248344,accepted,,1.259690711796625
+C_all,3,UTIL,Power/utilities,1,11.79033813645793,rejected,|rho|=0.72 with LOWVOL,
+C_all,4,SOFT,Software/cloud,1,11.662170626984306,accepted,,1.1621337176417341
+C_all,5,SIZE,Style,1,10.850085269074954,accepted,,1.0209396026460138
+C_all,6,COPPER,Metals/nuclear,1,9.098751065834039,accepted,,1.118740108480454
+C_all,7,GRID,Grid/capex,1,7.779342237729911,accepted,,1.35979482804517
+C_all,8,HY,Credit/risk,1,6.073117448435472,accepted,,1.0748876761104438
+C_all,9,MOM,Style,1,4.74017556230078,not_reached,K_max=8 reached,
+C_all,10,OIL,Energy,1,4.6713751770070475,not_reached,K_max=8 reached,
+C_all,11,URANIUM,Metals/nuclear,1,4.10443227534792,not_reached,K_max=8 reached,
+C_all,12,USD,Dollar/global,1,3.8064952851129905,not_reached,K_max=8 reached,
+C_all,13,D10Y,Rates,1,3.6919260790881387,not_reached,K_max=8 reached,
+C_all,14,VIX,Credit/risk,1,3.4222304401281556,not_reached,K_max=8 reached,
+C_all,15,POWER,Power/utilities,1,3.0056723552662366,not_reached,K_max=8 reached,
+C_all,16,SLOPE,Rates,1,2.852538078155244,not_reached,K_max=8 reached,
+C_all,17,GAS,Energy,1,2.5000383717269536,not_reached,K_max=8 reached,
+C_all,18,EQW,Style,2,19.992041981819238,not_reached,K_max=8 reached,
+C_all,19,VALUE,Style,2,19.847401745584623,not_reached,K_max=8 reached,
+C_all,20,ENERGY,Energy,2,14.931100733087447,not_reached,K_max=8 reached,
+C_all,21,SEMI_SOXX,Semiconductors,2,12.948398800484016,not_reached,K_max=8 reached,
+C_all,22,CLOUD,Software/cloud,2,11.931857493046959,not_reached,K_max=8 reached,
+C_all,23,ROBO,Cyber/robotics,2,10.927343740001177,not_reached,K_max=8 reached,
+C_all,24,CYBER,Cyber/robotics,2,10.261662482571003,not_reached,K_max=8 reached,
+C_all,25,CYBER_HACK,Cyber/robotics,2,10.116136624138768,not_reached,K_max=8 reached,
+C_all,26,EM,Dollar/global,2,9.275687151527428,not_reached,K_max=8 reached,
+C_all,27,DEV,Dollar/global,2,5.6428233501804765,not_reached,K_max=8 reached,
+C_all,28,REALRATE,Rates,2,4.482881756341197,not_reached,K_max=8 reached,
+C_all,29,COPPER_FUT,Metals/nuclear,2,4.475545162935825,not_reached,K_max=8 reached,
+C_all,30,CREDIT,Credit/risk,2,4.154219582853561,not_reached,K_max=8 reached,
+C_all,31,GOLD,Metals/nuclear,2,4.007614025252207,not_reached,K_max=8 reached,
+C_all,32,QUAL,Style,2,3.3874852450646453,not_reached,K_max=8 reached,
+C_all,33,CURVE,Rates,2,2.268767133203227,not_reached,K_max=8 reached,

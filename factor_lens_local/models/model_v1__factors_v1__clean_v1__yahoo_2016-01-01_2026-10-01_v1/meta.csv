@@ -1,0 +1,2 @@
+primary_model,factors,window,est_start,est_end,hold_start,hold_end,n_targets,n_stocks,n_baskets,first_rolling_date
+M3_plus_AI_close,"MKT,D10Y,USD,OIL,LOWVOL,POWER,GRID,URANIUM,SEMI,SOFT,ROBO,MOM",252,2017-01-03,2023-12-29,2024-01-02,2026-10-01,60,47,13,2017-07-03

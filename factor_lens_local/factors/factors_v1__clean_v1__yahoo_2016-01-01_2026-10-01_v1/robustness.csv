@@ -1,0 +1,3 @@
+version,n_days,max_gap_pearson_vs_spearman,at_pair_spearman,max_gap_pearson_vs_winsor,at_pair_winsor
+raw,1748,0.15934864329097836,HY|UTIL,0.11753755726757475,HY|UTIL
+neutral,1748,0.17981191878335726,REALRATE|CREDIT,0.13274310565724642,REALRATE|CREDIT

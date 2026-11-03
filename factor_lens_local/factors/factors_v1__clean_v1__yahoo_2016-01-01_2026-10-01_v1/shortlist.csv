@@ -1,0 +1,34 @@
+rank,factor,bucket,priority,relevance_score,decision,reason,vif_if_added
+1,LOWVOL,Style,1,16.42653062147269,accepted,,
+2,SEMI,Semiconductors,1,12.571121329248344,accepted,,1.259690711796625
+3,UTIL,Power/utilities,1,11.79033813645793,rejected,|rho|=0.72 with LOWVOL,
+4,SOFT,Software/cloud,1,11.662170626984306,accepted,,1.1621337176417341
+5,SIZE,Style,1,10.850085269074954,accepted,,1.0209396026460138
+6,COPPER,Metals/nuclear,1,9.098751065834039,accepted,,1.118740108480454
+7,GRID,Grid/capex,1,7.779342237729911,accepted,,1.35979482804517
+8,HY,Credit/risk,1,6.073117448435472,accepted,,1.0748876761104438
+9,MOM,Style,1,4.74017556230078,not_reached,K_max=8 reached,
+10,OIL,Energy,1,4.6713751770070475,not_reached,K_max=8 reached,
+11,URANIUM,Metals/nuclear,1,4.10443227534792,not_reached,K_max=8 reached,
+12,USD,Dollar/global,1,3.8064952851129905,not_reached,K_max=8 reached,
+13,D10Y,Rates,1,3.6919260790881387,not_reached,K_max=8 reached,
+14,VIX,Credit/risk,1,3.4222304401281556,not_reached,K_max=8 reached,
+15,POWER,Power/utilities,1,3.0056723552662366,not_reached,K_max=8 reached,
+16,SLOPE,Rates,1,2.852538078155244,not_reached,K_max=8 reached,
+17,GAS,Energy,1,2.5000383717269536,not_reached,K_max=8 reached,
+18,EQW,Style,2,19.992041981819238,not_reached,K_max=8 reached,
+19,VALUE,Style,2,19.847401745584623,not_reached,K_max=8 reached,
+20,ENERGY,Energy,2,14.931100733087447,not_reached,K_max=8 reached,
+21,SEMI_SOXX,Semiconductors,2,12.948398800484016,not_reached,K_max=8 reached,
+22,CLOUD,Software/cloud,2,11.931857493046959,not_reached,K_max=8 reached,
+23,ROBO,Cyber/robotics,2,10.927343740001177,not_reached,K_max=8 reached,
+24,CYBER,Cyber/robotics,2,10.261662482571003,not_reached,K_max=8 reached,
+25,CYBER_HACK,Cyber/robotics,2,10.116136624138768,not_reached,K_max=8 reached,
+26,EM,Dollar/global,2,9.275687151527428,not_reached,K_max=8 reached,
+27,DEV,Dollar/global,2,5.6428233501804765,not_reached,K_max=8 reached,
+28,REALRATE,Rates,2,4.482881756341197,not_reached,K_max=8 reached,
+29,COPPER_FUT,Metals/nuclear,2,4.475545162935825,not_reached,K_max=8 reached,
+30,CREDIT,Credit/risk,2,4.154219582853561,not_reached,K_max=8 reached,
+31,GOLD,Metals/nuclear,2,4.007614025252207,not_reached,K_max=8 reached,
+32,QUAL,Style,2,3.3874852450646453,not_reached,K_max=8 reached,
+33,CURVE,Rates,2,2.268767133203227,not_reached,K_max=8 reached,

@@ -1,0 +1,13 @@
+{
+  "key": "619596dc7df188c1",
+  "created_utc": "2026-11-03T10:30:57+00:00",
+  "pandas": "3.1.0",
+  "python": "3.14.7",
+  "calendar": {
+    "n_days": 2702,
+    "first": "2016-01-04",
+    "last": "2026-10-01",
+    "n_only_in_nyse_lib": 0,
+    "n_only_in_data": 0
+  }
+}
