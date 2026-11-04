@@ -1,0 +1,7 @@
+{
+  "last_download_run_utc": "2026-11-04T10:28:32+00:00",
+  "yfinance_version": "1.7.0",
+  "pandas_version": "3.1.0",
+  "python": "3.14.7",
+  "note": "Yahoo adjusted prices are a snapshot: Adj Close is recalculated retroactively on new dividends/splits."
+}

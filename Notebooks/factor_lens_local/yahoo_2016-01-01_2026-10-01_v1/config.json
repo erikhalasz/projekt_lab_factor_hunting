@@ -1,0 +1,7 @@
+{
+  "source": "yfinance",
+  "start": "2016-01-01",
+  "end_inclusive": "2026-10-01",
+  "auto_adjust": false,
+  "actions": true
+}
