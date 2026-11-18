@@ -18,5 +18,8 @@ dependencies = [
     "yfinance",
 ]
 
+[project.optional-dependencies]
+app = ["streamlit>=1.40", "plotly>=5"]
+
 [tool.setuptools.packages.find]
 where = ["src"]

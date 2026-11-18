@@ -1,0 +1,12 @@
+numpy
+pandas
+requests
+yfinance
+statsmodels
+matplotlib
+seaborn
+plotly
+pandas-market-calendars
+pyarrow
+scipy
+streamlit

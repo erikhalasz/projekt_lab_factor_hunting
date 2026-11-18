@@ -15,6 +15,7 @@ Notebooks/
   04_linear_model.ipynb        # rolling factor model, attribution, placebo test
   04b_stock_specific_model.ipynb # regress each stock on its selected factors
 src/factor_lens/               # reusable Python implementation
+app/                           # interactive factor explorer (Streamlit)
 ```
 
 The notebooks are intentionally short entry points. Reusable functions and
@@ -52,3 +53,21 @@ The final notebook includes an AI-specificity placebo check. It compares the
 incremental holdout fit of the AI-close extension for pre-declared AI-exposed
 stocks versus non-AI control companies. It is evidence about specificity, not
 causal proof.
+
+## Interactive factor explorer
+
+`app/factor_explorer.py` is a Streamlit app for exploring the model by hand: pick
+any stock, ETF or basket, tick which catalog factors go into the model, change the
+Gram–Schmidt order, and see fit, betas (Newey–West t-stats), the R² ladder, rolling
+betas and R², actual vs fitted, monthly P&L attribution and risk shares update. A
+compare tab puts two factor sets or two targets side by side, and VIF / condition
+number warnings flag collinear sets.
+
+It only reads the cached outputs in `factor_lens_local/` (run notebooks 01–04
+first) and reuses the regression code in `src/factor_lens/linear_model.py`.
+
+```bash
+pip install -r requirements.txt     # or: pip install -e ".[app]"
+streamlit run app/factor_explorer.py
+python app/check_defaults.py        # default setup must reproduce factor_lens_local/models/
+```
